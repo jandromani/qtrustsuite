@@ -24,7 +24,3 @@ dependencies:
       - python-dotenv==1.0.1
       - reportlab==4.2.0
       - paho-mqtt==1.6.1
-      # Dependencias faltantes
-      - Flask>=2.0.0,<3.0.0
-      - Flask-Cors==4.0.0
-      - gunicorn==22.0.0

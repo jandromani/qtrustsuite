@@ -2909,3 +2909,23 @@ q_link_sim.integration.crypto_bridge.CryptoBridgeError: Failed to connect to Q-C
 2025-07-02 11:34:33,547 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\logs\qlinksim.log with level DEBUG.
 2025-07-02 11:34:33,559 - q_link_sim.q_ledger.audit - DEBUG - Audit ledger already initialized.
 2025-07-02 11:34:33,562 - __main__ - INFO - Q-LINK SIM iniciado con exito
+2025-07-02 14:06:06,396 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\logs\qlinksim.log with level DEBUG.
+2025-07-02 14:06:06,397 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\logs\qlinksim.log with level DEBUG.
+2025-07-02 14:06:06,396 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\logs\qlinksim.log with level DEBUG.
+2025-07-02 14:06:06,397 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\logs\qlinksim.log with level DEBUG.
+2025-07-02 14:06:06,423 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,423 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,423 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,423 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,424 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,425 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,424 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,425 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\data\q_ledger\ledger.db
+2025-07-02 14:06:06,429 - q_link_sim.q_sync_bridge.orchestrator - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 14:06:06,430 - q_link_sim.q_sync_bridge.orchestrator - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 14:06:06,429 - q_link_sim.q_sync_bridge.orchestrator - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 14:06:06,430 - q_link_sim.q_sync_bridge.orchestrator - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 14:06:06,430 - __main__ - INFO - Q-LINK SIM iniciado con exito
+2025-07-02 14:06:06,430 - __main__ - INFO - Q-LINK SIM iniciado con exito
+2025-07-02 14:06:06,430 - __main__ - INFO - Q-LINK SIM iniciado con exito
+2025-07-02 14:06:06,430 - __main__ - INFO - Q-LINK SIM iniciado con exito
