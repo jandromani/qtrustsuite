@@ -8,6 +8,10 @@ from flask_cors import CORS
 
 # Import logging configuration and set it up immediately
 from q_commsec_api.logging_config import setup_logging
+from q_commsec_api.crypto.session_store import SessionStore
+from q_commsec_api.crypto.key_manager import KeyManager
+from q_commsec_api.crypto.cipher import AESCipher
+
 
 # Initialize global instances of KeyManager, SecureCipher, and SessionStore.
 # These instances will be passed to the blueprint factories to ensure they are
