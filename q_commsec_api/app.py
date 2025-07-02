@@ -1,14 +1,16 @@
-from flask import Flask
-import subprocess
 import sys
 import os
+
+# Añadir la raíz del proyecto al PYTHONPATH
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from flask import Flask
+import subprocess
 import time
 import logging
 from flask_cors import CORS
 
 
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'q_commsec_api')))
 
 # Import logging configuration and set it up immediately
 from q_commsec_api.logging_config import setup_logging
