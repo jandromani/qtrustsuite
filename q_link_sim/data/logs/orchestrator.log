@@ -1,0 +1,687 @@
+2025-07-01 19:53:55,445 - __main__ - ERROR - Error assigning key pair for SCADA-SCADA-A to SCADA-B: buffer size must be a multiple of element size
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 101, in assign_key_pair
+    compatible_key_bits_np = np.frombuffer(qkd_compatible_bits_db, dtype=int)
+ValueError: buffer size must be a multiple of element size
+2025-07-01 19:53:55,447 - __main__ - ERROR - Error in standalone orchestrator execution: buffer size must be a multiple of element size
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 315, in <module>
+    orchestrator.assign_key_pair("SCADA-A", "SCADA-B", "SCADA", "high")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 101, in assign_key_pair
+    compatible_key_bits_np = np.frombuffer(qkd_compatible_bits_db, dtype=int)
+ValueError: buffer size must be a multiple of element size
+2025-07-01 19:55:58,470 - __main__ - ERROR - Error assigning key pair for SCADA-SCADA-A to SCADA-B: buffer size must be a multiple of element size
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 101, in assign_key_pair
+    compatible_key_bits_np = np.frombuffer(qkd_compatible_bits_db, dtype=int)
+ValueError: buffer size must be a multiple of element size
+2025-07-01 19:55:58,472 - __main__ - ERROR - Error in standalone orchestrator execution: buffer size must be a multiple of element size
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 315, in <module>
+    orchestrator.assign_key_pair("SCADA-A", "SCADA-B", "SCADA", "high")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 101, in assign_key_pair
+    compatible_key_bits_np = np.frombuffer(qkd_compatible_bits_db, dtype=int)
+ValueError: buffer size must be a multiple of element size
+2025-07-01 19:58:52,245 - __main__ - INFO -  Orchestrator database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-01 19:58:52,247 - __main__ - INFO - Orquestador Q-TRUST activo
+2025-07-01 19:58:52,416 - __main__ - INFO - Orchestrator: Session 99d1a29b... created for SCADA (QKD).
+2025-07-01 19:58:52,417 - __main__ - ERROR - Error assigning key pair for SCADA-SCADA-A to SCADA-B: register_event() got an unexpected keyword argument 'metadata'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 131, in assign_key_pair
+    register_event(
+    ~~~~~~~~~~~~~~^
+        event_type="ORCH_SESSION_ASSIGNED",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        metadata={"system_type": system_type, "priority_level": priority_level, "key_type": key_type}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: register_event() got an unexpected keyword argument 'metadata'
+2025-07-01 19:58:52,420 - __main__ - ERROR - Error in standalone orchestrator execution: register_event() got an unexpected keyword argument 'metadata'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 315, in <module>
+    orchestrator.assign_key_pair("SCADA-A", "SCADA-B", "SCADA", "high")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 131, in assign_key_pair
+    register_event(
+    ~~~~~~~~~~~~~~^
+        event_type="ORCH_SESSION_ASSIGNED",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        metadata={"system_type": system_type, "priority_level": priority_level, "key_type": key_type}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: register_event() got an unexpected keyword argument 'metadata'
+2025-07-01 20:02:28,228 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-01 20:02:28,229 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-01 20:02:28,328 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-01 20:02:28,349 - __main__ - INFO - Orchestrator: Session e9d59c78... created for SCADA (QKD).
+2025-07-01 20:02:28,350 - __main__ - ERROR - Error assigning key pair for SCADA-SCADA-A to SCADA-B: register_event() got an unexpected keyword argument 'metadata'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 131, in assign_key_pair
+    register_event(
+    ~~~~~~~~~~~~~~^
+        event_type="ORCH_SESSION_ASSIGNED",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        metadata={"system_type": system_type, "priority_level": priority_level, "key_type": key_type}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: register_event() got an unexpected keyword argument 'metadata'
+2025-07-01 20:02:28,354 - __main__ - ERROR - Error in standalone orchestrator execution: register_event() got an unexpected keyword argument 'metadata'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 315, in <module>
+    orchestrator.assign_key_pair("SCADA-A", "SCADA-B", "SCADA", "high")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 131, in assign_key_pair
+    register_event(
+    ~~~~~~~~~~~~~~^
+        event_type="ORCH_SESSION_ASSIGNED",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        metadata={"system_type": system_type, "priority_level": priority_level, "key_type": key_type}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: register_event() got an unexpected keyword argument 'metadata'
+2025-07-01 20:07:00,572 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-01 20:07:00,574 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-01 20:07:00,669 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-01 20:07:00,686 - __main__ - INFO - Orchestrator: Session 1d0a317d... created for SCADA (QKD).
+2025-07-01 20:07:00,686 - q_link_sim.q_ledger.audit - ERROR - Audit ledger not initialized. Cannot register event.
+2025-07-01 20:07:00,687 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-01 20:07:00,699 - __main__ - INFO - Orchestrator: Session 5b88a842... created for ERP (PQC).
+2025-07-01 20:07:00,699 - q_link_sim.q_ledger.audit - ERROR - Audit ledger not initialized. Cannot register event.
+2025-07-01 20:07:00,699 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-01 20:07:00,710 - __main__ - INFO - Orchestrator: Session f2420273... created for API (Fallback).
+2025-07-01 20:07:00,710 - q_link_sim.q_ledger.audit - ERROR - Audit ledger not initialized. Cannot register event.
+2025-07-01 20:07:00,723 - __main__ - ERROR - Error validating session 99d1a29b-db4d-4bca-8fad-4f320868bc7f: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 171, in validate_session
+    if active_session.expires_at > datetime.datetime.now(datetime.timezone.utc):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-07-01 20:07:00,744 - __main__ - INFO - Orchestrator: Session 99d1a29b... revoked.
+2025-07-01 20:07:00,748 - q_link_sim.q_ledger.audit - ERROR - Audit ledger not initialized. Cannot register event.
+2025-07-01 20:10:21,570 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-01 20:10:21,573 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-01 20:10:21,574 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-01 20:10:21,647 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-01 20:10:21,666 - __main__ - INFO - Orchestrator: Session 0c813da8... created for SCADA (QKD).
+2025-07-01 20:10:21,667 - q_link_sim.q_ledger.audit - ERROR - Error registering event ORCH_SESSION_ASSIGNED for session 0c813da8-1109-4307-b54a-9443437fd17a: encode() got an unexpected keyword argument 'sort_keys'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\audit.py", line 81, in register_event
+    entry_hash = calculate_hash(event_data_for_hash)
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\utils.py", line 20, in calculate_hash
+    json_string = jsonpickle.encode(data, sort_keys=True, indent=None, separators=(',', ':'))
+TypeError: encode() got an unexpected keyword argument 'sort_keys'
+2025-07-01 20:10:21,671 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-01 20:10:21,684 - __main__ - INFO - Orchestrator: Session ba30cdbb... created for ERP (PQC).
+2025-07-01 20:10:21,685 - q_link_sim.q_ledger.audit - ERROR - Error registering event ORCH_SESSION_ASSIGNED for session ba30cdbb-a9d3-464b-bb31-89530367a6b3: encode() got an unexpected keyword argument 'sort_keys'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\audit.py", line 81, in register_event
+    entry_hash = calculate_hash(event_data_for_hash)
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\utils.py", line 20, in calculate_hash
+    json_string = jsonpickle.encode(data, sort_keys=True, indent=None, separators=(',', ':'))
+TypeError: encode() got an unexpected keyword argument 'sort_keys'
+2025-07-01 20:10:21,687 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-01 20:10:21,702 - __main__ - INFO - Orchestrator: Session 0a4623f9... created for API (Fallback).
+2025-07-01 20:10:21,703 - q_link_sim.q_ledger.audit - ERROR - Error registering event ORCH_SESSION_ASSIGNED for session 0a4623f9-4897-48d1-a195-f6e45678dc49: encode() got an unexpected keyword argument 'sort_keys'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\audit.py", line 81, in register_event
+    entry_hash = calculate_hash(event_data_for_hash)
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_ledger\utils.py", line 20, in calculate_hash
+    json_string = jsonpickle.encode(data, sort_keys=True, indent=None, separators=(',', ':'))
+TypeError: encode() got an unexpected keyword argument 'sort_keys'
+2025-07-01 20:10:21,706 - __main__ - ERROR - Error retrieving active sessions: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with ActiveSession.expires_at has an attribute 'replace'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\sql\elements.py", line 1498, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'replace'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\orm\attributes.py", line 472, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\util\langhelpers.py", line 1332, in __getattr__
+    return self._fallback_getattr(key)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\orm\properties.py", line 472, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\sql\elements.py", line 1500, in __getattr__
+    raise AttributeError(
+    ...<6 lines>...
+    ) from err
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'replace'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 256, in get_active_sessions
+    ActiveSession.expires_at.replace(tzinfo=datetime.timezone.utc) <= now,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abaratas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\orm\attributes.py", line 474, in __getattr__
+    raise AttributeError(
+    ...<8 lines>...
+    ) from err
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with ActiveSession.expires_at has an attribute 'replace'
+2025-07-02 01:44:58,271 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 01:44:58,307 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 01:44:58,307 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 01:44:58,311 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 01:44:58,311 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 01:44:58,311 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 01:44:58,311 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (19 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 01:44:58,311 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 151.
+2025-07-02 01:44:58,311 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 01:44:58,331 - __main__ - INFO - Orchestrator: Session 62472875... created for SCADA (QKD).
+2025-07-02 01:44:58,349 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 62472875...
+2025-07-02 01:44:58,350 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 01:44:58,365 - __main__ - INFO - Orchestrator: Session 67821aad... created for ERP (PQC).
+2025-07-02 01:44:58,377 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 67821aad...
+2025-07-02 01:44:58,377 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 01:44:58,386 - __main__ - INFO - Orchestrator: Session 7d286d8a... created for API (Fallback).
+2025-07-02 01:44:58,396 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 7d286d8a...
+2025-07-02 01:44:58,404 - __main__ - WARNING - Orchestrator: Session e9d59c78... automatically expired.
+2025-07-02 01:44:58,416 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session e9d59c78...
+2025-07-02 01:44:58,416 - __main__ - WARNING - Orchestrator: Session 1d0a317d... automatically expired.
+2025-07-02 01:44:58,425 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 1d0a317d...
+2025-07-02 01:44:58,426 - __main__ - WARNING - Orchestrator: Session 5b88a842... automatically expired.
+2025-07-02 01:44:58,436 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 5b88a842...
+2025-07-02 01:44:58,436 - __main__ - WARNING - Orchestrator: Session f2420273... automatically expired.
+2025-07-02 01:44:58,448 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session f2420273...
+2025-07-02 01:44:58,449 - __main__ - WARNING - Orchestrator: Session 0c813da8... automatically expired.
+2025-07-02 01:44:58,458 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 0c813da8...
+2025-07-02 01:44:58,459 - __main__ - WARNING - Orchestrator: Session ba30cdbb... automatically expired.
+2025-07-02 01:44:58,466 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session ba30cdbb...
+2025-07-02 01:44:58,466 - __main__ - WARNING - Orchestrator: Session 0a4623f9... automatically expired.
+2025-07-02 01:44:58,482 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 0a4623f9...
+2025-07-02 01:44:58,511 - __main__ - INFO - Orchestrator: Session 62472875... revoked.
+2025-07-02 01:44:58,523 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 62472875...
+2025-07-02 01:49:28,871 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 01:49:28,901 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 01:49:28,901 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 01:49:28,901 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 01:49:28,901 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 01:49:28,901 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 01:49:28,901 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (16 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 01:49:28,911 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 124.
+2025-07-02 01:49:28,911 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 01:49:28,924 - __main__ - INFO - Orchestrator: Session 8ff056a0... created for SCADA (QKD).
+2025-07-02 01:49:28,941 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 8ff056a0...
+2025-07-02 01:49:28,941 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 01:49:28,955 - __main__ - INFO - Orchestrator: Session ac9d467a... created for ERP (PQC).
+2025-07-02 01:49:28,961 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session ac9d467a...
+2025-07-02 01:49:28,966 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 01:49:28,971 - __main__ - INFO - Orchestrator: Session 51ff9306... created for API (Fallback).
+2025-07-02 01:49:28,988 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 51ff9306...
+2025-07-02 01:49:29,011 - __main__ - INFO - Orchestrator: Session 67821aad... revoked.
+2025-07-02 01:49:29,021 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 67821aad...
+2025-07-02 02:45:35,801 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 02:45:35,870 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 02:45:35,872 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 02:45:35,876 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 02:45:35,877 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 02:45:35,877 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 02:45:35,882 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 02:45:35,882 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 129.
+2025-07-02 02:45:35,883 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 02:45:35,908 - __main__ - INFO - Orchestrator: Session 0f61921e... created for SCADA (QKD).
+2025-07-02 02:45:35,937 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 0f61921e...
+2025-07-02 02:45:35,938 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 02:45:35,957 - __main__ - INFO - Orchestrator: Session 3ff897c6... created for ERP (PQC).
+2025-07-02 02:45:35,971 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 3ff897c6...
+2025-07-02 02:45:35,972 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 02:45:35,981 - __main__ - INFO - Orchestrator: Session 4bac8d72... created for API (Fallback).
+2025-07-02 02:45:35,996 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 4bac8d72...
+2025-07-02 02:45:36,002 - __main__ - WARNING - Orchestrator: Session 7d286d8a... automatically expired.
+2025-07-02 02:45:36,011 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 7d286d8a...
+2025-07-02 02:45:36,013 - __main__ - WARNING - Orchestrator: Session dc72a65a... automatically expired.
+2025-07-02 02:45:36,021 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session dc72a65a...
+2025-07-02 02:45:36,056 - __main__ - INFO - Orchestrator: Session 8ff056a0... revoked.
+2025-07-02 02:45:36,067 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 8ff056a0...
+2025-07-02 02:56:57,716 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 02:56:57,796 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 02:56:57,797 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 02:56:57,803 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 02:56:57,804 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 02:56:57,804 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 02:56:57,809 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 02:56:57,810 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 130.
+2025-07-02 02:56:57,811 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 02:56:57,832 - __main__ - INFO - Orchestrator: Session d7600926... created for SCADA (QKD).
+2025-07-02 02:56:57,856 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session d7600926...
+2025-07-02 02:56:57,858 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 02:56:57,872 - __main__ - INFO - Orchestrator: Session 3be81c03... created for ERP (PQC).
+2025-07-02 02:56:57,888 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 3be81c03...
+2025-07-02 02:56:57,889 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 02:56:57,904 - __main__ - INFO - Orchestrator: Session 80d2c5fb... created for API (Fallback).
+2025-07-02 02:56:57,920 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 80d2c5fb...
+2025-07-02 02:56:57,930 - __main__ - WARNING - Orchestrator: Session ac9d467a... automatically expired.
+2025-07-02 02:56:57,945 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session ac9d467a...
+2025-07-02 02:56:57,946 - __main__ - WARNING - Orchestrator: Session 51ff9306... automatically expired.
+2025-07-02 02:56:57,961 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 51ff9306...
+2025-07-02 02:56:57,962 - __main__ - WARNING - Orchestrator: Session 065bae91... automatically expired.
+2025-07-02 02:56:57,977 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 065bae91...
+2025-07-02 02:56:58,018 - __main__ - INFO - Orchestrator: Session f759cd9d... revoked.
+2025-07-02 02:56:58,036 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session f759cd9d...
+2025-07-02 03:11:01,506 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:11:01,547 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:11:01,547 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:11:01,553 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:11:01,553 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:11:01,553 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:11:01,553 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:11:01,553 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 133.
+2025-07-02 03:11:01,553 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:11:01,576 - __main__ - INFO - Orchestrator: Session 36201fe0... created for SCADA (QKD).
+2025-07-02 03:11:01,585 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 36201fe0...
+2025-07-02 03:11:01,585 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:11:01,601 - __main__ - INFO - Orchestrator: Session 26266d4a... created for ERP (PQC).
+2025-07-02 03:11:01,616 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 26266d4a...
+2025-07-02 03:11:01,616 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:11:01,626 - __main__ - INFO - Orchestrator: Session 6864549f... created for API (Fallback).
+2025-07-02 03:11:01,632 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 6864549f...
+2025-07-02 03:11:01,664 - __main__ - INFO - Orchestrator: Session 34c9dbf5... revoked.
+2025-07-02 03:11:01,680 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 34c9dbf5...
+2025-07-02 03:11:32,087 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:11:32,117 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:11:32,118 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:11:32,118 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:11:32,118 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:11:32,118 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:11:32,118 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:11:32,118 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 135.
+2025-07-02 03:11:32,118 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:11:32,134 - __main__ - INFO - Orchestrator: Session 07f4f43f... created for SCADA (QKD).
+2025-07-02 03:11:32,149 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 07f4f43f...
+2025-07-02 03:11:32,149 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:11:32,149 - __main__ - INFO - Orchestrator: Session f0391a7d... created for ERP (PQC).
+2025-07-02 03:11:32,165 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session f0391a7d...
+2025-07-02 03:11:32,165 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:11:32,181 - __main__ - INFO - Orchestrator: Session 29aa4659... created for API (Fallback).
+2025-07-02 03:11:32,181 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 29aa4659...
+2025-07-02 03:11:32,218 - __main__ - INFO - Orchestrator: Session 23c72943... revoked.
+2025-07-02 03:11:32,228 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 23c72943...
+2025-07-02 03:16:22,767 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:16:22,823 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:16:22,823 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:16:22,826 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:16:22,826 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:16:22,826 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:16:22,827 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:16:22,828 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 134.
+2025-07-02 03:16:22,828 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:16:22,842 - __main__ - INFO - Orchestrator: Session 5e5a1c14... created for SCADA (QKD).
+2025-07-02 03:16:22,850 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 5e5a1c14...
+2025-07-02 03:16:22,850 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:16:22,873 - __main__ - INFO - Orchestrator: Session 3646a356... created for ERP (PQC).
+2025-07-02 03:16:22,890 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 3646a356...
+2025-07-02 03:16:22,891 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:16:22,902 - __main__ - INFO - Orchestrator: Session 1b403ed0... created for API (Fallback).
+2025-07-02 03:16:22,917 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 1b403ed0...
+2025-07-02 03:16:22,946 - __main__ - INFO - Orchestrator: Session 4b0f3734... revoked.
+2025-07-02 03:16:22,961 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 4b0f3734...
+2025-07-02 03:19:07,771 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:19:07,802 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:19:07,802 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:19:07,818 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:19:07,818 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:19:07,818 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:19:07,818 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (16 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:19:07,818 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 128.
+2025-07-02 03:19:07,818 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:19:07,850 - __main__ - INFO - Orchestrator: Session ebf3b704... created for SCADA (QKD).
+2025-07-02 03:19:07,850 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session ebf3b704...
+2025-07-02 03:19:07,850 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:19:07,871 - __main__ - INFO - Orchestrator: Session bd66d05c... created for ERP (PQC).
+2025-07-02 03:19:07,881 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session bd66d05c...
+2025-07-02 03:19:07,881 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:19:07,897 - __main__ - INFO - Orchestrator: Session 2f2dd8f6... created for API (Fallback).
+2025-07-02 03:19:07,913 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 2f2dd8f6...
+2025-07-02 03:19:07,929 - __main__ - INFO - Orchestrator: Session 0f61921e... revoked.
+2025-07-02 03:19:07,944 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 0f61921e...
+2025-07-02 03:21:58,464 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:21:58,495 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:21:58,495 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:21:58,495 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:21:58,495 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:21:58,495 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:21:58,510 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:21:58,510 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 132.
+2025-07-02 03:21:58,510 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:21:58,526 - __main__ - INFO - Orchestrator: Session f93d2ac8... created for SCADA (QKD).
+2025-07-02 03:21:58,526 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session f93d2ac8...
+2025-07-02 03:21:58,526 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:21:58,542 - __main__ - INFO - Orchestrator: Session e3f6fec5... created for ERP (PQC).
+2025-07-02 03:21:58,558 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session e3f6fec5...
+2025-07-02 03:21:58,558 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:21:58,558 - __main__ - INFO - Orchestrator: Session 19f73760... created for API (Fallback).
+2025-07-02 03:21:58,573 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 19f73760...
+2025-07-02 03:21:58,589 - __main__ - INFO - Orchestrator: Session 3ff897c6... revoked.
+2025-07-02 03:21:58,605 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 3ff897c6...
+2025-07-02 03:24:45,301 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:24:45,354 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:24:45,354 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:24:45,364 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:24:45,364 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:24:45,364 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:24:45,364 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:24:45,364 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 134.
+2025-07-02 03:24:45,372 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:24:45,380 - __main__ - INFO - Orchestrator: Session cfc3c993... created for SCADA (QKD).
+2025-07-02 03:24:45,396 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session cfc3c993...
+2025-07-02 03:24:45,396 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:24:45,412 - __main__ - INFO - Orchestrator: Session 6d441c02... created for ERP (PQC).
+2025-07-02 03:24:45,428 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 6d441c02...
+2025-07-02 03:24:45,428 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:24:45,428 - __main__ - INFO - Orchestrator: Session 024610b3... created for API (Fallback).
+2025-07-02 03:24:45,443 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 024610b3...
+2025-07-02 03:24:45,476 - __main__ - INFO - Orchestrator: Session b7c7f7bf... revoked.
+2025-07-02 03:24:45,491 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session b7c7f7bf...
+2025-07-02 03:40:07,044 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:40:07,088 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:40:07,089 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:40:07,091 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:40:07,091 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:40:07,092 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:40:07,097 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (16 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:40:07,098 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 127.
+2025-07-02 03:40:07,099 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:40:07,121 - __main__ - INFO - Orchestrator: Session e54a3338... created for SCADA (QKD).
+2025-07-02 03:40:07,139 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session e54a3338...
+2025-07-02 03:40:07,139 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:40:07,151 - __main__ - INFO - Orchestrator: Session 65c3109a... created for ERP (PQC).
+2025-07-02 03:40:07,163 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 65c3109a...
+2025-07-02 03:40:07,164 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:40:07,175 - __main__ - INFO - Orchestrator: Session bef96b39... created for API (Fallback).
+2025-07-02 03:40:07,189 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session bef96b39...
+2025-07-02 03:40:07,218 - __main__ - INFO - Orchestrator: Session 6230fd3d... revoked.
+2025-07-02 03:40:07,232 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 6230fd3d...
+2025-07-02 03:42:53,910 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:42:53,934 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:42:53,934 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:42:53,934 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:42:53,934 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:42:53,941 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:42:53,944 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:42:53,944 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 133.
+2025-07-02 03:42:53,944 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:42:53,957 - __main__ - INFO - Orchestrator: Session dc096770... created for SCADA (QKD).
+2025-07-02 03:42:53,974 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session dc096770...
+2025-07-02 03:42:53,974 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:42:53,984 - __main__ - INFO - Orchestrator: Session 28f62239... created for ERP (PQC).
+2025-07-02 03:42:53,994 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 28f62239...
+2025-07-02 03:42:53,994 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:42:54,005 - __main__ - INFO - Orchestrator: Session 3b9d314f... created for API (Fallback).
+2025-07-02 03:42:54,024 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 3b9d314f...
+2025-07-02 03:42:54,054 - __main__ - INFO - Orchestrator: Session 360aaeec... revoked.
+2025-07-02 03:42:54,074 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 360aaeec...
+2025-07-02 03:47:33,880 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:47:33,946 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:47:33,947 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:47:33,951 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:47:33,951 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:47:33,952 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:47:33,955 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (15 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:47:33,956 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 114.
+2025-07-02 03:47:33,956 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:47:33,976 - __main__ - INFO - Orchestrator: Session a4ddb87f... created for SCADA (QKD).
+2025-07-02 03:47:33,996 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session a4ddb87f...
+2025-07-02 03:47:33,997 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:47:34,010 - __main__ - INFO - Orchestrator: Session 46347c0f... created for ERP (PQC).
+2025-07-02 03:47:34,025 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 46347c0f...
+2025-07-02 03:47:34,026 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:47:34,039 - __main__ - INFO - Orchestrator: Session b6e9b66d... created for API (Fallback).
+2025-07-02 03:47:34,052 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session b6e9b66d...
+2025-07-02 03:47:34,087 - __main__ - INFO - Orchestrator: Session d7600926... revoked.
+2025-07-02 03:47:34,105 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session d7600926...
+2025-07-02 03:51:38,180 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 03:51:38,279 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:51:38,280 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 03:51:38,283 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 03:51:38,284 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 03:51:38,285 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 03:51:38,290 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (15 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 03:51:38,290 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 120.
+2025-07-02 03:51:38,291 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 03:51:38,308 - __main__ - INFO - Orchestrator: Session 3a8f05f4... created for SCADA (QKD).
+2025-07-02 03:51:38,326 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 3a8f05f4...
+2025-07-02 03:51:38,326 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 03:51:38,340 - __main__ - INFO - Orchestrator: Session a5a82a3c... created for ERP (PQC).
+2025-07-02 03:51:38,355 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session a5a82a3c...
+2025-07-02 03:51:38,355 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 03:51:38,369 - __main__ - INFO - Orchestrator: Session 44670fdf... created for API (Fallback).
+2025-07-02 03:51:38,384 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 44670fdf...
+2025-07-02 03:51:38,413 - __main__ - INFO - Orchestrator: Session 3be81c03... revoked.
+2025-07-02 03:51:38,428 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 3be81c03...
+2025-07-02 04:05:59,447 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 04:05:59,518 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:05:59,518 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:05:59,518 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 04:05:59,518 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 04:05:59,528 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 04:05:59,528 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (18 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 04:05:59,528 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 138.
+2025-07-02 04:05:59,528 - __main__ - INFO - Session SCADA-SCADA-A -> SCADA-B assigned with QKD
+2025-07-02 04:05:59,550 - __main__ - INFO - Orchestrator: Session 76bdc4cd... created for SCADA (QKD).
+2025-07-02 04:05:59,568 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 76bdc4cd...
+2025-07-02 04:05:59,568 - __main__ - INFO - Session ERP-ERP-A -> ERP-B assigned with PQC
+2025-07-02 04:05:59,582 - __main__ - INFO - Orchestrator: Session 9f68bd42... created for ERP (PQC).
+2025-07-02 04:05:59,598 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 9f68bd42...
+2025-07-02 04:05:59,598 - __main__ - WARNING - Session API-Web-Client -> API-Gateway assigned with Fallback (suboptimal conditions)
+2025-07-02 04:05:59,614 - __main__ - INFO - Orchestrator: Session 8f87b827... created for API (Fallback).
+2025-07-02 04:05:59,629 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 8f87b827...
+2025-07-02 04:05:59,638 - __main__ - WARNING - Orchestrator: Session 8bb19ed6... automatically expired.
+2025-07-02 04:05:59,648 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 8bb19ed6...
+2025-07-02 04:05:59,648 - __main__ - WARNING - Orchestrator: Session e3592292... automatically expired.
+2025-07-02 04:05:59,661 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session e3592292...
+2025-07-02 04:05:59,661 - __main__ - WARNING - Orchestrator: Session c18c7cee... automatically expired.
+2025-07-02 04:05:59,678 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session c18c7cee...
+2025-07-02 04:05:59,718 - __main__ - INFO - Orchestrator: Session 36201fe0... revoked.
+2025-07-02 04:05:59,741 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 36201fe0...
+2025-07-02 04:16:40,610 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 04:16:40,663 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:16:40,664 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:16:40,667 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 04:16:40,668 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 04:16:40,668 - __main__ - ERROR - Error in standalone orchestrator execution: 'QuantumOrchestrator' object has no attribute 'assign_key_pair'
+Traceback (most recent call last):
+  File "C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\orchestrator.py", line 341, in <module>
+    orchestrator.assign_key_pair("SCADA-A", "SCADA-B", "SCADA", "high")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumOrchestrator' object has no attribute 'assign_key_pair'
+2025-07-02 04:18:15,691 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 04:18:15,769 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:18:15,769 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:18:15,769 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 04:18:15,769 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 04:18:15,769 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 04:18:15,781 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 04:18:15,782 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 130.
+2025-07-02 04:18:15,800 - __main__ - INFO - Session 59e109c1... created with key type QKD.
+2025-07-02 04:18:15,833 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 59e109c1...
+2025-07-02 04:18:15,851 - __main__ - INFO - Session 814f1a26... created with key type PQC.
+2025-07-02 04:18:15,867 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 814f1a26...
+2025-07-02 04:18:15,881 - __main__ - INFO - Session 0397636e... created with key type Fallback.
+2025-07-02 04:18:15,901 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 0397636e...
+2025-07-02 04:18:15,901 - __main__ - WARNING - Orchestrator: Session 26266d4a... automatically expired.
+2025-07-02 04:18:15,917 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 26266d4a...
+2025-07-02 04:18:15,917 - __main__ - WARNING - Orchestrator: Session 6864549f... automatically expired.
+2025-07-02 04:18:15,934 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 6864549f...
+2025-07-02 04:18:15,934 - __main__ - WARNING - Orchestrator: Session 07f4f43f... automatically expired.
+2025-07-02 04:18:15,951 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 07f4f43f...
+2025-07-02 04:18:15,951 - __main__ - WARNING - Orchestrator: Session f0391a7d... automatically expired.
+2025-07-02 04:18:15,982 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session f0391a7d...
+2025-07-02 04:18:15,983 - __main__ - WARNING - Orchestrator: Session 29aa4659... automatically expired.
+2025-07-02 04:18:16,001 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 29aa4659...
+2025-07-02 04:18:16,001 - __main__ - WARNING - Orchestrator: Session 58793f64... automatically expired.
+2025-07-02 04:18:16,030 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 58793f64...
+2025-07-02 04:18:16,036 - __main__ - WARNING - Orchestrator: Session 5e5a1c14... automatically expired.
+2025-07-02 04:18:16,069 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 5e5a1c14...
+2025-07-02 04:18:16,069 - __main__ - WARNING - Orchestrator: Session 3646a356... automatically expired.
+2025-07-02 04:18:16,086 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 3646a356...
+2025-07-02 04:18:16,086 - __main__ - WARNING - Orchestrator: Session 1b403ed0... automatically expired.
+2025-07-02 04:18:16,104 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 1b403ed0...
+2025-07-02 04:18:16,150 - __main__ - INFO - Orchestrator: Session ebf3b704... revoked.
+2025-07-02 04:18:16,179 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session ebf3b704...
+2025-07-02 04:26:27,803 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 04:26:27,850 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:26:27,850 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:26:27,862 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 04:26:27,862 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 04:26:27,862 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 04:26:27,866 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 04:26:27,866 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 130.
+2025-07-02 04:26:27,882 - __main__ - INFO - Session 31d23df1... created with key type QKD.
+2025-07-02 04:26:27,898 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 31d23df1...
+2025-07-02 04:26:27,914 - __main__ - INFO - Session d4d3a331... created with key type PQC.
+2025-07-02 04:26:27,914 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session d4d3a331...
+2025-07-02 04:26:27,930 - __main__ - INFO - Session 06ba1f3e... created with key type Fallback.
+2025-07-02 04:26:27,948 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 06ba1f3e...
+2025-07-02 04:26:27,948 - __main__ - WARNING - Orchestrator: Session bd66d05c... automatically expired.
+2025-07-02 04:26:27,962 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session bd66d05c...
+2025-07-02 04:26:27,962 - __main__ - WARNING - Orchestrator: Session 2f2dd8f6... automatically expired.
+2025-07-02 04:26:27,977 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 2f2dd8f6...
+2025-07-02 04:26:27,977 - __main__ - WARNING - Orchestrator: Session f93d2ac8... automatically expired.
+2025-07-02 04:26:27,977 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session f93d2ac8...
+2025-07-02 04:26:27,977 - __main__ - WARNING - Orchestrator: Session e3f6fec5... automatically expired.
+2025-07-02 04:26:27,998 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session e3f6fec5...
+2025-07-02 04:26:27,998 - __main__ - WARNING - Orchestrator: Session 19f73760... automatically expired.
+2025-07-02 04:26:28,009 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 19f73760...
+2025-07-02 04:26:28,009 - __main__ - WARNING - Orchestrator: Session cfc3c993... automatically expired.
+2025-07-02 04:26:28,009 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session cfc3c993...
+2025-07-02 04:26:28,009 - __main__ - WARNING - Orchestrator: Session 6d441c02... automatically expired.
+2025-07-02 04:26:28,025 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 6d441c02...
+2025-07-02 04:26:28,025 - __main__ - WARNING - Orchestrator: Session 024610b3... automatically expired.
+2025-07-02 04:26:28,040 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 024610b3...
+2025-07-02 04:26:28,040 - __main__ - WARNING - Orchestrator: Session 17e05532... automatically expired.
+2025-07-02 04:26:28,040 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 17e05532...
+2025-07-02 04:26:28,072 - __main__ - INFO - Orchestrator: Session e54a3338... revoked.
+2025-07-02 04:26:28,072 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session e54a3338...
+2025-07-02 04:28:19,894 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 04:28:19,944 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:28:19,944 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 04:28:19,944 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 04:28:19,944 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 04:28:19,944 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 04:28:19,957 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (17 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 04:28:19,957 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 129.
+2025-07-02 04:28:19,991 - __main__ - INFO - Session 9a6316ec... created with key type QKD.
+2025-07-02 04:28:20,024 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 9a6316ec...
+2025-07-02 04:28:20,032 - __main__ - INFO - Session 4a44ff4b... created with key type PQC.
+2025-07-02 04:28:20,047 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 4a44ff4b...
+2025-07-02 04:28:20,076 - __main__ - INFO - Session cf475953... created with key type Fallback.
+2025-07-02 04:28:20,087 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session cf475953...
+2025-07-02 04:28:20,128 - __main__ - INFO - Orchestrator: Session 65c3109a... revoked.
+2025-07-02 04:28:20,148 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 65c3109a...
+2025-07-02 09:36:29,525 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 09:36:29,577 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 09:36:29,577 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 09:36:29,577 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 09:36:29,577 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 09:36:29,577 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 09:36:29,577 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (15 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 09:36:29,577 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 119.
+2025-07-02 09:36:29,594 - __main__ - INFO - Session 7a5a6f97... created with key type QKD.
+2025-07-02 09:36:29,616 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 7a5a6f97...
+2025-07-02 09:36:29,626 - __main__ - INFO - Session dc21a354... created with key type PQC.
+2025-07-02 09:36:29,626 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session dc21a354...
+2025-07-02 09:36:29,649 - __main__ - INFO - Session d972be31... created with key type Fallback.
+2025-07-02 09:36:29,659 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session d972be31...
+2025-07-02 09:36:29,659 - __main__ - WARNING - Orchestrator: Session bef96b39... automatically expired.
+2025-07-02 09:36:29,675 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session bef96b39...
+2025-07-02 09:36:29,675 - __main__ - WARNING - Orchestrator: Session 83bf8faa... automatically expired.
+2025-07-02 09:36:29,684 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 83bf8faa...
+2025-07-02 09:36:29,684 - __main__ - WARNING - Orchestrator: Session dc096770... automatically expired.
+2025-07-02 09:36:29,695 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session dc096770...
+2025-07-02 09:36:29,695 - __main__ - WARNING - Orchestrator: Session 28f62239... automatically expired.
+2025-07-02 09:36:29,710 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 28f62239...
+2025-07-02 09:36:29,710 - __main__ - WARNING - Orchestrator: Session 3b9d314f... automatically expired.
+2025-07-02 09:36:29,719 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 3b9d314f...
+2025-07-02 09:36:29,720 - __main__ - WARNING - Orchestrator: Session bc26f3d4... automatically expired.
+2025-07-02 09:36:29,726 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session bc26f3d4...
+2025-07-02 09:36:29,726 - __main__ - WARNING - Orchestrator: Session a4ddb87f... automatically expired.
+2025-07-02 09:36:29,741 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session a4ddb87f...
+2025-07-02 09:36:29,742 - __main__ - WARNING - Orchestrator: Session 46347c0f... automatically expired.
+2025-07-02 09:36:29,752 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 46347c0f...
+2025-07-02 09:36:29,752 - __main__ - WARNING - Orchestrator: Session b6e9b66d... automatically expired.
+2025-07-02 09:36:29,760 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session b6e9b66d...
+2025-07-02 09:36:29,760 - __main__ - WARNING - Orchestrator: Session 96f5d380... automatically expired.
+2025-07-02 09:36:29,777 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 96f5d380...
+2025-07-02 09:36:29,777 - __main__ - WARNING - Orchestrator: Session 3a8f05f4... automatically expired.
+2025-07-02 09:36:29,788 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 3a8f05f4...
+2025-07-02 09:36:29,788 - __main__ - WARNING - Orchestrator: Session a5a82a3c... automatically expired.
+2025-07-02 09:36:29,793 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session a5a82a3c...
+2025-07-02 09:36:29,793 - __main__ - WARNING - Orchestrator: Session 44670fdf... automatically expired.
+2025-07-02 09:36:29,812 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 44670fdf...
+2025-07-02 09:36:29,812 - __main__ - WARNING - Orchestrator: Session a368183c... automatically expired.
+2025-07-02 09:36:29,823 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session a368183c...
+2025-07-02 09:36:29,823 - __main__ - WARNING - Orchestrator: Session d2674e4e... automatically expired.
+2025-07-02 09:36:29,826 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session d2674e4e...
+2025-07-02 09:36:29,826 - __main__ - WARNING - Orchestrator: Session 431a2169... automatically expired.
+2025-07-02 09:36:29,845 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 431a2169...
+2025-07-02 09:36:29,845 - __main__ - WARNING - Orchestrator: Session e2056d7c... automatically expired.
+2025-07-02 09:36:29,855 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session e2056d7c...
+2025-07-02 09:36:29,855 - __main__ - WARNING - Orchestrator: Session 3d62aade... automatically expired.
+2025-07-02 09:36:29,860 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 3d62aade...
+2025-07-02 09:36:29,860 - __main__ - WARNING - Orchestrator: Session b1d3afae... automatically expired.
+2025-07-02 09:36:29,879 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session b1d3afae...
+2025-07-02 09:36:29,879 - __main__ - WARNING - Orchestrator: Session 76bdc4cd... automatically expired.
+2025-07-02 09:36:29,889 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 76bdc4cd...
+2025-07-02 09:36:29,889 - __main__ - WARNING - Orchestrator: Session 9f68bd42... automatically expired.
+2025-07-02 09:36:29,889 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 9f68bd42...
+2025-07-02 09:36:29,889 - __main__ - WARNING - Orchestrator: Session 8f87b827... automatically expired.
+2025-07-02 09:36:29,909 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 8f87b827...
+2025-07-02 09:36:29,909 - __main__ - WARNING - Orchestrator: Session 97e5f722... automatically expired.
+2025-07-02 09:36:29,909 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 97e5f722...
+2025-07-02 09:36:29,923 - __main__ - WARNING - Orchestrator: Session 638ad8f6... automatically expired.
+2025-07-02 09:36:29,926 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 638ad8f6...
+2025-07-02 09:36:29,926 - __main__ - WARNING - Orchestrator: Session 828ea9f3... automatically expired.
+2025-07-02 09:36:29,941 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 828ea9f3...
+2025-07-02 09:36:29,941 - __main__ - WARNING - Orchestrator: Session 59e109c1... automatically expired.
+2025-07-02 09:36:29,941 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 59e109c1...
+2025-07-02 09:36:29,941 - __main__ - WARNING - Orchestrator: Session 814f1a26... automatically expired.
+2025-07-02 09:36:29,958 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 814f1a26...
+2025-07-02 09:36:29,958 - __main__ - WARNING - Orchestrator: Session 0397636e... automatically expired.
+2025-07-02 09:36:29,977 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 0397636e...
+2025-07-02 09:36:29,977 - __main__ - WARNING - Orchestrator: Session 2f584a38... automatically expired.
+2025-07-02 09:36:29,991 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 2f584a38...
+2025-07-02 09:36:29,991 - __main__ - WARNING - Orchestrator: Session 31d23df1... automatically expired.
+2025-07-02 09:36:29,992 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 31d23df1...
+2025-07-02 09:36:29,992 - __main__ - WARNING - Orchestrator: Session d4d3a331... automatically expired.
+2025-07-02 09:36:30,008 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session d4d3a331...
+2025-07-02 09:36:30,008 - __main__ - WARNING - Orchestrator: Session 06ba1f3e... automatically expired.
+2025-07-02 09:36:30,025 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 06ba1f3e...
+2025-07-02 09:36:30,025 - __main__ - WARNING - Orchestrator: Session 9a6316ec... automatically expired.
+2025-07-02 09:36:30,025 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 9a6316ec...
+2025-07-02 09:36:30,025 - __main__ - WARNING - Orchestrator: Session 4a44ff4b... automatically expired.
+2025-07-02 09:36:30,042 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session 4a44ff4b...
+2025-07-02 09:36:30,042 - __main__ - WARNING - Orchestrator: Session cf475953... automatically expired.
+2025-07-02 09:36:30,059 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session cf475953...
+2025-07-02 09:36:30,059 - __main__ - WARNING - Orchestrator: Session b465b847... automatically expired.
+2025-07-02 09:36:30,077 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_AUTO_EXPIRED - Session b465b847...
+2025-07-02 09:36:30,108 - __main__ - INFO - Orchestrator: Session 7a5a6f97... revoked.
+2025-07-02 09:36:30,108 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session 7a5a6f97...
+2025-07-02 09:54:14,351 - root - INFO - Logging configured. Logs will be written to C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\logs\orchestrator.log with level INFO.
+2025-07-02 09:54:14,461 - q_link_sim.q_ledger.models - INFO - Audit ledger database initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 09:54:14,461 - q_link_sim.q_ledger.audit - INFO - Audit ledger initialized at C:\Users\abaratas\Downloads\q-commsec-api-project\q_link_sim\q_sync_bridge\..\data\q_ledger\ledger.db
+2025-07-02 09:54:14,461 - __main__ - INFO - [Orchestrator] Database initialized at q_link_sim/data/q_sync_bridge/orchestrator.db
+2025-07-02 09:54:14,461 - __main__ - INFO - [Orchestrator] Q-TRUST activo
+2025-07-02 09:54:14,461 - q_link_sim.simulator.qkd_bb84 - INFO - Starting BB84 simulation with 256 bits.
+2025-07-02 09:54:14,461 - q_link_sim.simulator.qkd_bb84 - WARNING - Derived key length (18 bytes) is not 32 bytes. Hashing to 32 bytes.
+2025-07-02 09:54:14,476 - q_link_sim.simulator.qkd_bb84 - INFO - BB84 simulation completed. Raw key length: 256, Shared key length: 137.
+2025-07-02 09:54:14,493 - __main__ - INFO - Session e98c2226... created with key type QKD.
+2025-07-02 09:54:14,526 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session e98c2226...
+2025-07-02 09:54:14,540 - __main__ - INFO - Session 77f93f78... created with key type PQC.
+2025-07-02 09:54:14,556 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 77f93f78...
+2025-07-02 09:54:14,571 - __main__ - INFO - Session 64c50252... created with key type Fallback.
+2025-07-02 09:54:14,587 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_ASSIGNED - Session 64c50252...
+2025-07-02 09:54:14,626 - __main__ - INFO - Orchestrator: Session dc21a354... revoked.
+2025-07-02 09:54:14,650 - q_link_sim.q_ledger.audit - INFO - Event registered in ledger: ORCH_SESSION_REVOKED - Session dc21a354...

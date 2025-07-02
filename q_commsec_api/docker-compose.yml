@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  q_commsec_api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - SECRET_KEY=your_secret_key_here
+    volumes:
+      - .:/app
+    # command: python app.py # Use this for development, gunicorn for production

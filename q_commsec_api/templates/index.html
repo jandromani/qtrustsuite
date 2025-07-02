@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-COMMSEC API</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 2em;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            background-color: #fafafa;
+        }
+        .section h2 {
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3e8e41;
+        }
+        .result-box {
+            background-color: #e9f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: #2e7d32;
+        }
+        .error-box {
+            background-color: #ffebee;
+            border: 1px solid #ef9a9a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .flash-message {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .flash-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .flash-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1em;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .endpoint {
+            margin-bottom: 1.5em;
+            padding: 1em;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .endpoint h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .endpoint p {
+            margin-bottom: 0.5em;
+        }
+        .method {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .path {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Q-COMMSEC API</h1>
+        <p>This API provides cryptographic services for quantum communication security, including key management, encryption, and decryption.</p>
+
+        <h2>Available Endpoints:</h2>
+
+        <div class="endpoint">
+            <h2><code>/api/generate_key</code></h2>
+            <p><span class="method">POST</span> <span class="path">/api/generate_key</span></p>
+            <p>Generates a new symmetric key and creates a session for it.</p>
+            <p><strong>Request Body (JSON):</strong></p>
+            <pre><code>{
+    "key_size_bytes": 32,   // Optional, default is 32 (for AES-256)
+    "duration_minutes": 60, // Optional, default is 60 minutes
+    "metadata": {}          // Optional, any additional session metadata
+}</code></pre>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string",
+    "key_length_bytes": 32,
+    "message": "Key generated and session created successfully."
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/derive_key</code></h2>
+            <p><span class="method">POST</span> <span class="path">/api/derive_key</span></p>
+            <p>Derives a strong cryptographic key from a shared secret using PBKDF2.</p>
+            <p><strong>Request Body (JSON):</strong></p>
+            <pre><code>{
+    "shared_secret": "base64_encoded_secret", // Required
+    "salt": "base64_encoded_salt",            // Optional, new one generated if not provided
+    "iterations": 100000,                     // Optional, default is 100000
+    "key_length": 32,                         // Optional, default is 32
+    "duration_minutes": 60,                   // Optional, default is 60 minutes
+    "metadata": {}                            // Optional, any additional session metadata
+}</code></pre>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string",
+    "key_length_bytes": 32,
+    "used_salt": "base64_encoded_salt",
+    "message": "Key derived and session created successfully."
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/encrypt</code></h2>
+            <p><span class="method">POST</span> <span class="path">/api/encrypt</span></p>
+            <p>Encrypts a message using a key from an active session.</p>
+            <p><strong>Request Body (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string", // Required
+    "plaintext": "Your message here" // Required
+}</code></pre>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "ciphertext": "base64_encoded_encrypted_message"
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/decrypt</code></h2>
+            <p><span class="method">POST</span> <span class="path">/api/decrypt</span></p>
+            <p>Decrypts a message using a key from an active session.</p>
+            <p><strong>Request Body (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string", // Required
+    "ciphertext": "base64_encoded_encrypted_message" // Required
+}</code></pre>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "plaintext": "Your decrypted message here"
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/session_status/{session_id}</code></h2>
+            <p><span class="method">GET</span> <span class="path">/api/session_status/&lt;session_id&gt;</span></p>
+            <p>Checks the status of a session.</p>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string",
+    "status": "active", // or "inactive or expired"
+    "expires_at": "ISO_FORMAT_DATETIME",
+    "created_at": "ISO_FORMAT_DATETIME",
+    "key_length_bytes": 32,
+    "metadata": {}
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/revoke_session</code></h2>
+            <p><span class="method">POST</span> <span class="path">/api/revoke_session</span></p>
+            <p>Revokes (deletes) an active session.</p>
+            <p><strong>Request Body (JSON):</strong></p>
+            <pre><code>{
+    "session_id": "uuid-string" // Required
+}</code></pre>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>{
+    "message": "Session uuid-string revoked successfully."
+}</code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><code>/api/active_sessions</code></h2>
+            <p><span class="method">GET</span> <span class="path">/api/active_sessions</span></p>
+            <p>Retrieves a list of all active sessions (excluding key material).</p>
+            <p><strong>Response (JSON):</strong></p>
+            <pre><code>[
+    {
+        "session_id": "uuid-string",
+        "expires_at": "ISO_FORMAT_DATETIME",
+        "created_at": "ISO_FORMAT_DATETIME",
+        "key_length_bytes": 32,
+        "metadata": {}
+    },
+    // ... more sessions
+]</code></pre>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% if error_message %}
+            <div class="error-box">
+                Error: {{ error_message }}
+            </div>
+        {% endif %}
+
+        <form method="POST" action="/">
+            <div class="section">
+                <h2>Session Management</h2>
+                <label for="session_id">Current Session ID:</label>
+                <input type="text" id="session_id" name="session_id" value="{{ session_id }}" readonly>
+                <button type="submit" name="action" value="generate_session">🔐 Generate New Session</button>
+            </div>
+
+            <div class="section">
+                <h2>Encryption</h2>
+                <label for="message">Message to Encrypt:</label>
+                <textarea id="message" name="message" placeholder="Enter your secret message here...">{{ message }}</textarea>
+                <button type="submit" name="action" value="encrypt">🧬 Encrypt Message</button>
+                {% if result_ciphertext %}
+                    <div class="result-box">
+                        <strong>Ciphertext:</strong><br>
+                        {{ result_ciphertext }}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="section">
+                <h2>Decryption</h2>
+                <label for="ciphertext">Ciphertext to Decrypt:</label>
+                <textarea id="ciphertext" name="ciphertext" placeholder="Paste the ciphertext here...">{{ ciphertext }}</textarea>
+                <button type="submit" name="action" value="decrypt">🔓 Decrypt Message</button>
+                {% if result_decrypted_message %}
+                    <div class="result-box">
+                        <strong>Decrypted Message:</strong><br>
+                        {{ result_decrypted_message }}
+                    </div>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  qcommsec:
+    build:
+      context: . # Build context is the current directory (where docker-compose.yml is)
+      dockerfile: Dockerfile # Path to the Dockerfile
+    ports:
+      - "5000:5000" # Map host port 5000 to container port 5000
+    environment:
+      # Load SESSION_MASTER_KEY from .env file.
+      # If .env is not present or key is missing, a default (for testing/dev) is used.
+      # In production, always ensure this is securely set.
+      SESSION_MASTER_KEY: ${SESSION_MASTER_KEY:-a_default_generated_fernet_key_for_dev_only_do_not_use_in_prod_replace_me}
+    volumes:
+      # Mount a volume for persistent session data and logs
+      # Host path: ./data, Container path: /app/q_commsec_api/data
+      - ./data:/app/q_commsec_api/data
+    # Optional: Restart policy
+    restart: unless-stopped

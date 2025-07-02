@@ -1,0 +1,26 @@
+name: qtrust
+channels:
+  - conda-forge
+dependencies:
+  # núcleo
+  - python=3.11            # 3.11.x tiene binarios de todo
+  # librerías conda
+  - streamlit=1.36
+  - numpy=1.26
+  - pandas=2.2.2
+  - networkx=3.3
+  - matplotlib=3.8.4       # 3.9.x aún no tiene wheel para win-64/py311
+  - plotly=5.22
+  - sqlalchemy=2.0.31
+  - cryptography=42.0.5
+  - pytest=8.2.2
+  - requests=2.32.3
+  - jsonpickle=3.0.2
+  - pip                    # pip como dependencia conda
+  # paquetes solo-pip
+  - pip:
+      - web3==6.20.0
+      - eth-account==0.11.0    # 0.11.x compatible con hexbytes 0.3.x
+      - python-dotenv==1.0.1
+      - reportlab==4.2.0
+      - paho-mqtt==1.6.1

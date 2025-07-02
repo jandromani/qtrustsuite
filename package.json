@@ -1,0 +1,16 @@
+{
+  "name": "q-commsec-api-project",
+  "version": "1.0.0",
+  "description": "This project implements a hybrid quantum-safe communication security API using Flask, simulating post-quantum key exchange (Kyber) and employing AES-256-GCM for symmetric encryption. It includes a web interface for testing, secure session persistence, and robust logging.",
+  "main": "index.js",
+  "scripts": {
+    "hardhat:node": "hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "hardhat": "^2.25.0"
+  }
+}
