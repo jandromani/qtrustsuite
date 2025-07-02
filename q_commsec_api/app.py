@@ -11,7 +11,7 @@ from flask_cors import CORS
 from q_commsec_api.logging_config import setup_logging
 from q_commsec_api.crypto.session_store import SessionStore
 from q_commsec_api.crypto.key_manager import KeyManager
-from q_commsec_api.secure_cipher import SecureCipher
+from q_commsec_api.crypto.cypher import AESCipher
 from q_commsec_api.routes.commsec_routes import create_commsec_blueprint
 from q_commsec_api.routes.ui_routes import create_ui_blueprint
 
@@ -22,6 +22,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 session_store_instance = None
 key_manager_instance = None
 secure_cipher_instance = None
+aes_cipher_instance = AESCipher()
+
 
 def create_app(test_config=None):
     """
