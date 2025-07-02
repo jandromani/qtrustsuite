@@ -10,7 +10,7 @@ from flask import Flask
 from flask_cors import CORS
 from q_commsec_api.logging_config import setup_logging
 from q_commsec_api.crypto.session_store import SessionStore
-from q_commsec_api.key_manager import KeyManager
+from q_commsec_api.crypto.key_manager import KeyManager
 from q_commsec_api.secure_cipher import SecureCipher
 from q_commsec_api.routes.commsec_routes import create_commsec_blueprint
 from q_commsec_api.routes.ui_routes import create_ui_blueprint
