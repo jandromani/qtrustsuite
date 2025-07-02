@@ -13,4 +13,4 @@ eth-account==0.12.1  # Versión compatible con web3==6.20.0
 python-dotenv==1.0.1
 requests==2.32.3
 reportlab==4.2.0
-paho-mqtt==1.6.1y
+paho-mqtt==1.6.1
